@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //四则运算+-*/
+        let a = (55-60)+20
+        let b = 12
+        let c = 13
+        let d = '12' 
+        //比较> < >= <= 1=(等价于-不判断类型) !==(等价===判断类型的)
+        console.log(b > c);     //false
+        console.log(b < c);     //true
+        console.log(b != c);    //true1og
+        console.log(b != d);    //false 
+        console.log(b !== d);  //true
+        //逻辑运算&&当且仅当两边都为true才返回true
+        // ||或一边为true,返回true
+        // !非 取反
+        let e = 0
+        console.log(e && d);  //0 
+        console.log(e || d);  //12
+        console.log(!e);     //true
+        //三元表达式a?b:c   a如果为true,返回b，否则返回c 
+        let abc=(20 < 6) ? 10:4
+        console.log(abc);
+    </script>
+</body>
+</html>

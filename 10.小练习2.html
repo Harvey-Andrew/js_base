@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 小练习
+        // 1.输入一个大于0的数字
+        // 2.alert() 这个数字是否为质数
+        // 质数只能整除1和它自身的数，%
+
+        let num = prompt('请输入一个数：')
+        for(let i = 1;i<num;i++){
+            if(num % i == 0){
+                alert(num +'不是质数')
+            }else{
+                alert(num + '是质数')
+            }
+        }
+    </script>
+</body>
+</html>

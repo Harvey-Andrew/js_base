@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.string--->number 特点:只能识别纯数字的字符串包括整数，小数，科学计数法
+        let a = Number('10')
+        let b = Number('Hello')
+        let c = Number (undefined)
+        let d = Number('1.23e15')
+        // parseInt和parseFloat
+        let n = parseInt('16px')
+        console.log(a);
+        console.log(b);
+        console.log(c);
+        console.log(d);
+        console.log(n);
+        // 2. number转string
+        let aStr = a.toString()
+        console.log(aStr);
+        // 3. bool---->number true--->1 false---->0
+        let boolN = Number(true )
+        let boolF = Number(false )
+        console.log(boolN); // 1
+        console.log(boolF); // 0
+        // 4. number----- >bool 
+        let e = 0
+        let f = 6
+        let bool1 = Boolean(e)
+        let bool2 = Boolean(f)
+        console.log(bool1);
+        console.log(bool2);
+        // 5.Object----->string
+        let obj = {
+            a:3,
+            b:5
+        }
+
+        const objStr = obj.toString()
+        console.log(objStr);
+        // 序列化JSON.stringify 将对象转字符串
+        const objStr2 = JSON.stringify(obj)
+        console.log(objStr2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // number数字 字符串string布尔bool符号symbol 空undefined,null 对象0bject
+    // 字符串
+    // const let
+    // let声明变量const声明常量
+    // let name= '大帅比'
+    // const name2= 'kkk'
+    // name =  'wwww'
+    // console.log(name);
+    // //无法去修改一个常量的值
+    // name2= 'dddd '
+    // console.log(name2);
+
+    // // 字符串
+    // let name = '大帅比'
+    // let name2 = 'klkl'
+    // let phoneNumber = '1845454554565'
+    // // 通过length可以获取字符串的长度
+    // console.log(name.length);//3
+    // console.log(name[1]); //获取帅
+    // console.log(phoneNumber.substring(7,11)); //通过substring截取字符串
+
+    // //数字number 64浮点数
+    // let number1 = 1 //整数声明
+    // let number2 = 0.1 //声明小数
+    // let number3 = 1.23e100 //科学计数法
+    // let number4 = 0b11 //2进 制写法
+    // let number5= Infinity //无穷大
+    // let number6 = NaN //无法被表示的数字
+    // let n = '你好'-1 //NaN 
+    // let n2 = 0/0 //NaN0/0
+    // console.log(n);
+    // console.log(n2);
+    // console.log(Number.MAX_VALUE);
+    // //因为js的精度问题，0.1+0.2结果不等于0.3而等于0.300000000000004
+    // console.log(0.1+0.2);
+    //字符串转number
+    // let phoneNumber2 = Number(phoneNumber)
+    // console.log(phoneNumber2);
+    // //数字运算
+    // //四则运算
+    // let add = number1 + number2
+    // let del = number1 - number2
+    // let mul = number1 * number2
+    // let divide = number1 / number2 
+    // //取模
+    // let dat = 123
+    // let dd = 10
+    // let mod = dat%dd // 3 
+    // console.log(mod);
+
+    // //bool用来判断true或者false它一般和if条件判断搭配使用
+    // //声明一个bool
+    // let bool = true
+    // let a = 1
+    // let b ='1'
+    // // ==不判断类型===会判断数据类型
+    // let bool2=a==b //true
+    // let bool3=a===b //false
+    // console.log(bool2);
+    // console.log(bool3);
+    // // js中的falsy值， 会被if判断为false
+    // // !将bool取反，false->true true ->false 
+    // if(!undefined){
+    //     console.log('undefined为fasly值');
+    // }
+
+    // if(!NaN){
+    //     console.log('NaN为fasly值');
+    // }
+
+    // if(!null){
+    //     console.log('null为fasly值');
+    // }
+
+    // if(!0){
+    //     console.log('0为fasly值');
+    // }
+
+    // if(!''){
+    //     console.log('""fasly值');
+    // }
+
+    // undefined null
+    // 如果一个变量，声明了，但是我们没有给它赋值，默认为undefined
+    let c
+    console.log(c);
+    //在我们还不确定a的值的时候，先给一个null来占位
+    let a = null
+    //对象常常用来描述一个事物，对象里面可以包含所有的数据类型
+    //对象声明
+    let friend={
+        name:'钱多多',
+        age:26 ,
+        hobbies:['游戏','旅游'],
+        isMale:true
+    }
+    // 2.关于对象的操作
+    //通过.操作符来获取对象中的属性能够获取到key对应的value值
+    const name = friend.name //钱多多
+    console.log(name);
+    const name2 = friend['name'] //使用[]写法， 获取到value
+    console.log(name2) ;
+    // .一个不存在的属性，结果为undefined 
+    console.log(friend.b);
+    //删除key会 将key连同它的value-起删除
+    delete friend['age']
+    console.log(friend);
+    //获取对象的所有的key值
+    const keys = Object.keys(friend)
+    console.log(keys);
+    //获取对象所有的value值
+    const values = Object.values(friend)
+    console.log(values);
+
+    </script>
+</body>
+</html>

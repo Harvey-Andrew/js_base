@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(window);
+        let obj={
+            a:1
+        }
+        console.log(obj.b);
+        // toString 我们现在打印一下看起来不存在的属性
+        console.log(obj.toString);
+        console.log(obj); 
+        console.log(obj.__proto__) ;
+        // hasOwnProperty用来判断，我们的对象中是否含有某个属性|
+        //用来判断是否含有你对象本身的属性，不含原型属性
+        console.log(obj.hasOwnProperty('a'));
+        // in用来判断，对象中是否含有某个属性，包含原型属性
+        console.log(toString in obj);
+    </script>
+</body>
+</html>

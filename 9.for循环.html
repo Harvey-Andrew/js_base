@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 遍历数字
+        // // 求和1-100
+        let sum =0
+        // js中的for循环，1.声明一个变量i 2.i的取值范围 3.累加器
+        for(let i=0;i<=100;i++){
+            sum += i
+        }
+        alert('1到100的和为'+sum)
+
+        // 遍历对象
+        let obj = {
+            a:2,
+            b:5,
+            c:9,
+        }
+        for(const property in obj){
+            console.log(property);
+            const value = obj[property]
+            console.log(value);       
+        }
+    </script>
+</body>
+</html>

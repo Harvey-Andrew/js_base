@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 输入工作年限
+        // 1.如果你的工作年限小于1年，你的年假是5天
+        // 2.如果你的工作年限小于3年,你的年假是7天
+        // 3.如果你的工作年限大于等于3年，你的年假是15天
+
+        let workYears = prompt('请输入你的工作年限：')
+
+        // 你的年假
+        let hoilday = null
+        if(workYears < 0){
+            hoilday = 0
+        }else if(workYears < 1){
+            hoilday = 5
+        }else if(workYears < 3){
+            hoilday = 7
+        }else if(workYears >= 3){
+            hoilday = 15
+        } 
+        alert('你的年假是'+ hoilday)
+
+    </script>
+</body>
+</html>
